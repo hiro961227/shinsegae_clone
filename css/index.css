@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700;900&display=swap");
+html, body, div, a, section, ul, li, span, p, b, label, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
+
+* { font-family: 'Noto Sans KR', sans-serif; }
+
+ul, li { list-style: none; }
+
+a { text-decoration: none; color: #000; }
+
+header { width: 100%; -webkit-transition: .8s; transition: .8s; position: fixed; left: 0; top: 0; z-index: 50; }
+
+header .header_main { width: 100%; padding: 45px 0 20px 70px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; z-index: 30; background-color: #fff; border-bottom: 1.5px solid #d8d8d8; }
+
+header .header_main a { width: 10%; height: 24px; display: block; background: url(https://shinsegae-inc.com/images/common/logo_sinc.png) 0 0 no-repeat; background-size: 100% 95% !important; }
+
+header .header_main a span { font-size: 0; }
+
+header .header_main nav { width: 60%; padding-left: 6%; font-size: 1.1em; }
+
+header .header_main nav ul { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+header .header_main nav ul .nav_menu { font-weight: bold; cursor: pointer; padding: 0 45px; }
+
+header .header_main nav ul .nav_menu .menu_name { -webkit-transition: .5s; transition: .5s; }
+
+header .header_main nav ul .nav_menu .menu_name:hover { color: #f00; }
+
+header .header_main nav ul .nav_menu .drop_menu { display: none; -webkit-transition: .8s; transition: .8s; width: 100%; height: 100vh; position: absolute; left: 0; top: 101.5px; background-color: rgba(0, 0, 0, 0.08); }
+
+header .header_main nav ul .nav_menu .drop_menu .inner_menu { padding: 1.7% 0; z-index: 60; position: relative; background-color: #fff; }
+
+header .header_main nav ul .nav_menu .drop_menu .inner_menu ul { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 53%; margin: 0 auto; }
+
+header .header_main nav ul .nav_menu .drop_menu .inner_menu ul li { padding: 1%; display: block; width: 18%; }
+
+header .header_main nav ul .nav_menu .drop_menu .inner_menu ul li b { width: 100%; display: block; padding-bottom: 8%; }
+
+header .header_main nav ul .nav_menu .drop_menu .inner_menu ul li ul { width: 100%; display: block; font-weight: 300; font-size: .9em; }
+
+header .header_main nav ul .nav_menu .drop_menu .inner_menu ul li ul li { width: 100%; display: block; padding: 2% 0; }
+
+header .header_main nav ul .nav_menu .active { display: block; }
+
+header .header_main .rightmenu { width: 20%; font-size: .9em; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-weight: 500; }
+
+header .header_main .rightmenu li { padding: 0 45px; }
+
+header .header_main .rightmenu li:nth-of-type(1) { padding: 0; }
+
+header .header_main .rightmenu .language { position: relative; }
+
+header .header_main .rightmenu .language span::after { position: absolute; top: 10px; left: 30px; content: ''; height: 0; border-bottom: 5px solid; border-left: 5px solid rgba(0, 0, 0, 0); border-right: 5px solid rgba(0, 0, 0, 0); color: #000; -webkit-transform: rotate(-180deg); transform: rotate(-180deg); }
+
+header .header_main .rightmenu .language ul { display: none; position: absolute; left: -20px; top: -15px; padding: 15px 20px; border: 1px solid #d8d8d8; background: #fff; border-radius: 30%; }
+
+header .header_main .rightmenu .language ul li { padding: 0 0 5px 0; }
+
+header .header_main .rightmenu .language .active { display: block; }
+
+header .header_main .rightmenu .search { display: block; width: 35px; height: 35px; background: url(https://shinsegae-inc.com/images/common/ico_search.png) 0 0 no-repeat; background-size: 32px 32px; }
+
+#main_container { padding-top: 105px; }
+
+#main_container #intro { position: relative; height: calc(100vh - 106px); }
+
+#main_container #intro aside { position: absolute; right: 90px; top: 50%; -webkit-transform: translate(0, -50%); transform: translate(0, -50%); }
+
+#main_container #intro aside a { display: block; width: 25px; height: 25px; margin: 35px 0; }
+
+#main_container #intro aside a span { font-size: 0; }
+
+#main_container #intro aside a:nth-of-type(1) { width: 25px; height: 35px; background: url(https://shinsegae-inc.com/images/common/ico_naver_b.png) 0 0 no-repeat; background-size: 100% 100% !important; }
+
+#main_container #intro aside a:nth-of-type(2) { background: url(https://shinsegae-inc.com/images/common/ico_youtube_b.png) 0 0 no-repeat; background-size: 100% 100% !important; }
+
+#main_container #intro aside a:nth-of-type(3) { background: url(https://shinsegae-inc.com/images/common/ico_facebook_b.png) 0 0 no-repeat; background-size: 100% 100% !important; }
+
+#main_container #intro .main { position: absolute; right: 60%; bottom: 12.6%; -webkit-transform: translateX(60%); transform: translateX(60%); font-size: 7.5em; font-weight: 900; line-height: .99; letter-spacing: -17px; }
+
+#main_container #intro .main .main_text .ani1 label { opacity: 0; -webkit-transform-origin: left; transform-origin: left; -webkit-transform: translate(-100px, 0); transform: translate(-100px, 0); }
+
+@-webkit-keyframes labelAni1 { 0% { opacity: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  100% { opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
+
+@keyframes labelAni1 { 0% { opacity: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  100% { opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
+
+#main_container #intro .main .main_text .ani2 label { opacity: 0; }
+
+@-webkit-keyframes labelAni2 { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+
+@keyframes labelAni2 { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+
+#main_container #intro .main .main_text .ani3 label { opacity: 0; }
+
+@-webkit-keyframes labelAni3 { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+
+@keyframes labelAni3 { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+
+#main_container #intro .main button { border: none; background-color: rgba(255, 255, 255, 0); }
+
+#main_container #intro .main .point_text { width: 90px; height: 90px; position: absolute; left: 65%; bottom: 1.5%; z-index: 1; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-perspective: 500px; perspective: 500px; opacity: 0; }
+
+#main_container #intro .main .point_text .plus { position: absolute; top: 0; left: 0; width: 100%; height: 100%; outline: none; z-index: 1; -webkit-transition: .75s all; transition: .75s all; }
+
+#main_container #intro .main .point_text .plus i { width: 100%; height: 100%; -webkit-transform: rotate(90deg); transform: rotate(90deg); position: absolute; left: 0; top: 0; -webkit-transition: .5s all linear; transition: .5s all linear; }
+
+#main_container #intro .main .point_text .plus i::before { content: ''; -webkit-transition: .75s all linear; transition: .75s all linear; position: absolute; left: 0; top: 50%; width: 50%; height: 24px; background: #f00; margin-top: -12px; }
+
+#main_container #intro .main .point_text .plus i::after { content: ''; -webkit-transition: .75s all linear; transition: .75s all linear; position: absolute; right: 0; top: 50%; width: 50%; height: 24px; background: #f00; margin-top: -12px; }
+
+#main_container #intro .main .point_text .plus::before { content: ''; position: absolute; left: 0; top: 50%; width: 100%; height: 24px; background: #f00; margin-top: -12px; -webkit-transform: rotate(180deg); transform: rotate(180deg); -webkit-transition: .75s all linear; transition: .75s all linear; }
+
+@-webkit-keyframes anigo4 { 0% { opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px); }
+  100% { opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); } }
+
+@keyframes anigo4 { 0% { opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px); }
+  100% { opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); } }
+
+@-webkit-keyframes anigo6 { 0% { opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); }
+  100% { opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px); } }
+
+@keyframes anigo6 { 0% { opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); }
+  100% { opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px); } }
+
+@-webkit-keyframes anigo8 { 0% { opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px); }
+  100% { opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); } }
+
+@keyframes anigo8 { 0% { opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px); }
+  100% { opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); } }
+
+@-webkit-keyframes animation { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  20% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  50% { -webkit-transform: rotate(405deg); transform: rotate(405deg); }
+  80% { -webkit-transform: rotate(405deg); transform: rotate(405deg); }
+  100% { -webkit-transform: rotate(720deg); transform: rotate(720deg); } }
+
+@keyframes animation { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  20% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  50% { -webkit-transform: rotate(405deg); transform: rotate(405deg); }
+  80% { -webkit-transform: rotate(405deg); transform: rotate(405deg); }
+  100% { -webkit-transform: rotate(720deg); transform: rotate(720deg); } }
+
+#main_container #intro .main .arr { opacity: 0; position: absolute; left: 64%; bottom: 0%; -webkit-transition: .5s all; transition: .5s all; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
+
+#main_container #intro .main .arr img { border: none; outline: none; vertical-align: top; }
+
+@-webkit-keyframes anigo5 { 0% { opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px); }
+  100% { opacity: 1;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); } }
+
+@keyframes anigo5 { 0% { opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px); }
+  100% { opacity: 1;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); } }
+
+@-webkit-keyframes anigo7 { 0% { opacity: 1;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); }
+  100% { opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px); } }
+
+@keyframes anigo7 { 0% { opacity: 1;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); }
+  100% { opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px); } }
+
+#main_container #intro .main_border { width: 100%; height: 28px; text-align: center; position: absolute; left: 0; bottom: 0; }
+
+#main_container #intro .main_border .bar { display: inline-block; background: #f00; width: 100%; height: 28px; }
+
+@-webkit-keyframes lineAni { 0% { width: 100%; }
+  100% { width: 0%;
+    overflow: hidden; } }
+
+@keyframes lineAni { 0% { width: 100%; }
+  100% { width: 0%;
+    overflow: hidden; } }
+
+@-webkit-keyframes lineAni2 { 0% { width: 0%;
+    overflow: hidden; }
+  100% { width: 100%; } }
+
+@keyframes lineAni2 { 0% { width: 0%;
+    overflow: hidden; }
+  100% { width: 100%; } }
+
+#main_container #about { width: 100%; max-width: 1000px; margin: 0 auto; padding-top: 4%; }
+
+#main_container #about h1 { font-size: 4em; font-weight: 900; line-height: .85; padding-bottom: 13%; }
+
+#main_container #about p { font-size: 2em; padding-bottom: 5%; font-weight: 600; line-height: 1.71; letter-spacing: -2px; color: #ccc; trnasition: none; }
+
+#main_container #about p b { color: #f00; }
+
+#main_container #about p:nth-of-type(1) { color: #000; }
+
+#main_container #business { width: 100%; background-color: #f7f7f7; }
+
+#main_container #business div { width: 60%; margin: 0 auto; padding: 3.5% 0 5% 0; }
+
+#main_container #business div h2 { font-size: 4em; font-weight: 900; line-height: .85; padding-bottom: 5.5%; }
+
+#main_container #business div h2 b { color: #f00; }
+
+#main_container #business div ul { font-size: 2.7em; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-left: 19%; min-width: 1000px; }
+
+#main_container #business div ul li { display: -webkit-box; display: -ms-flexbox; display: flex; position: relative; font-weight: 700; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; min-width: 480px; padding: 2.2% .5%; border-bottom: 1px solid rgba(226, 226, 226, 0.712); -webkit-transition: .7s; transition: .7s; }
+
+#main_container #business div ul li span { font-size: .4em; padding-right: 3.5%; font-weight: 600; }
+
+#main_container #business div ul li:after { content: ''; opacity: 0; -webkit-transition: .7s; transition: .7s; }
+
+#main_container #business div ul li:hover::after { content: ''; width: 35px; height: 32px; position: absolute; right: 5%; top: 40%; -webkit-transform: translateX(20%); transform: translateX(20%); opacity: 1; background: url(https://shinsegae-inc.com/images/common/arr_link.png) 0 0 no-repeat; }
+
+#main_container #business div ul li:hover { color: #f00; }
+
+#main_container #news div { width: 60%; margin: 0 auto; padding: 3.5% 0 5% 0; }
+
+#main_container #news div h2 { font-size: 4em; font-weight: 900; line-height: .85; padding-bottom: 5.5%; }
+
+#main_container #news div h2 b { color: #f00; }
+
+#main_container #news div ul { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-left: 19%; min-width: 1000px; }
+
+#main_container #news div ul li { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+#main_container #news div ul li a { line-height: 1.7; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 3.5% 0; font-size: 2em; border-bottom: 1px solid rgba(226, 226, 226, 0.712); }
+
+#main_container #news div ul li a img { width: 24%; }
+
+#main_container #news div ul li a span { width: 50%; display: block; word-break: keep-all; padding-left: 2.8%; }
+
+#main_container #news div ul li:after { content: ''; opacity: 0; -webkit-transition: .7s; transition: .7s; }
+
+#main_container #news div ul li:hover::after { content: ''; width: 35px; height: 32px; position: absolute; right: 5%; top: 40%; -webkit-transform: translateX(20%); transform: translateX(20%); opacity: 1; background: url(https://shinsegae-inc.com/images/common/arr_link.png) 0 0 no-repeat; }
+
+#main_container #news div div { margin-left: 19%; min-width: 1000px; }
+
+#main_container #news div div a { font-size: 1.5em; font-weight: 600; border-bottom: 4px solid #000; }
+
+#main_container #contactus div { width: 60%; margin: 0 auto; padding: 3.5% 0 5% 0; }
+
+#main_container #contactus div h2 { font-size: 4em; font-weight: 900; line-height: .85; padding-bottom: 5.5%; }
+
+#main_container #contactus div h2 b { color: #f00; }
+
+#main_container #contactus div p { font-size: 2em; margin-left: 19%; line-height: 1.7; min-width: 1000px; padding-bottom: 5%; }
+
+#main_container #contactus div a { font-size: 1.5em; font-weight: 600; border-bottom: 4px solid #000; margin-left: 19%; min-width: 1000px; }
+
+footer { position: relative; z-index: 10; color: #fff; background-color: #454545; }
+
+footer .up_button { width: 100px; height: 120px; position: absolute; top: -25%; right: 5%; background: url(https://shinsegae-inc.com/images/common/arr_top.png) 0 0 no-repeat; background-size: 100% 100%; cursor: pointer; }
+
+footer .footer_main { overflow: hidden; padding: 6% 4.3%; }
+
+footer .footer_main .info_left { float: left; }
+
+footer .footer_main .info_left .logo { display: inline-block; margin-right: 100px; font-weight: 700; font-size: 2.1em; vertical-align: middle; letter-spacing: .9px; }
+
+footer .footer_main .info_left ul { display: inline-block; vertical-align: middle; }
+
+footer .footer_main .info_left ul li { float: left; margin-right: 30px; font-size: 1.3em; letter-spacing: .5px; }
+
+footer .footer_main .info_left div { margin: 3.1% 0 1.5%; font-weight: 300; font-size: 1.2em; color: #ccc; white-space: pre-line; line-height: 2.1; }
+
+footer .footer_main .info_left div strong { font-weight: 300; }
+
+footer .footer_main .info_right { float: right; }
+
+footer .footer_main .info_right button { border: none; background-color: rgba(255, 255, 255, 0); }
+
+footer .footer_main .info_right .family { display: block; position: relative; width: 100%; font-weight: 700; text-align: left; font-size: 1.1em; color: #fff; letter-spacing: .36px; border-bottom: 3px solid #fff; }
+
+footer .footer_main .info_right .family::after { content: ''; display: block; width: 13px; height: 8px; position: absolute; left: 90%; top: 40%; background: url(https://shinsegae-inc.com/images/common/arr_family.png) 0 0 no-repeat; background-size: 100% 100% !important; }
+
+footer .footer_main .info_right .sns { width: 137px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-top: 85%; }
+
+footer .footer_main .info_right .sns .naver { width: 25px; height: 35px; background: url(https://shinsegae-inc.com/images/common/ico_naver_w.png) 0 0 no-repeat; background-size: 100% 100% !important; }
+
+footer .footer_main .info_right .sns .youtube { width: 25px; height: 25px; background: url(https://shinsegae-inc.com/images/common/ico_youtube_w.png) 0 0 no-repeat; background-size: 100% 100% !important; }
+
+footer .footer_main .info_right .sns .facebook { width: 25px; height: 25px; background: url(https://shinsegae-inc.com/images/common/ico_facebook_w.png) 0 0 no-repeat; background-size: 100% 100% !important; }
+/*# sourceMappingURL=index.css.map */
